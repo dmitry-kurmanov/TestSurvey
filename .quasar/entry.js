@@ -48,22 +48,11 @@ const plugins = []
 import pluginAxios from 'src/plugins/axios'
 plugins.push(pluginAxios)
 
-import pluginGoogleAuth from 'src/plugins/googleAuth'
-plugins.push(pluginGoogleAuth)
-
 plugins.forEach(plugin => plugin({ app, router, Vue }))
 
 
 
 
-
-import FastClick from 'fastclick'
-// Needed only for iOS PWAs
-if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream && window.navigator.standalone) {
-  document.addEventListener('DOMContentLoaded', () => {
-    FastClick.attach(document.body)
-  }, false)
-}
 
 
 

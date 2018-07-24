@@ -23,7 +23,7 @@
          <div class="col-1" v-if="surveyComplete">
 
            <br/>
-           <q-btn @click="$router.push('/app/home')" push color="secondary" >Exit</q-btn>
+           <q-btn @click="$router.push('/')" push color="secondary" >Exit</q-btn>
        </div>
     
   </div>

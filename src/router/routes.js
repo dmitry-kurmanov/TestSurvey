@@ -11,8 +11,7 @@ export default [
     path: '/',
     component: PageLayout,
     children: [
-     
-      
+          
       {path: 'surveycomp', name: 'surveycomponent', component: SurveyComponent}
     ]
   },

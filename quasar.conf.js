@@ -3,8 +3,7 @@
 module.exports = function (ctx) {
   return {
     plugins: [
-      'axios',
-      'googleAuth'
+      'axios'
     ],
     css: [
       'app.styl'
@@ -27,17 +26,15 @@ module.exports = function (ctx) {
       env: ctx.dev
       ? { // so on dev we'll have
       API: JSON.stringify('http://localhost:1272/api/')
-      //API: JSON.stringify('https://roam.dev.dxcbps.com/roamapi/api/')
-      //API: JSON.stringify('https://keys.dev.dxcbps.com/roamapi/api/')
+      
 
     }
     : { // and on build (production):
-      //API: JSON.stringify('https://roam.dxcbps.com/roamapi/api/')
-      //API: JSON.stringify('https://roam.dev.dxcbps.com/roamapi/api/')
-      API: JSON.stringify('https://keys.dev.dxcbps.com/roamapi/api/')
+    
+      API: JSON.stringify('http://localhost:1272/api/')
 
     },
-    publicPath: "/ds/",
+    //publicPath: "/ds/",
     // gzip: true,
     // analyze: true,
     // extractCSS: false,

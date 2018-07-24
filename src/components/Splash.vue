@@ -34,7 +34,7 @@ export default {
     var vm = this
       
       
-    setTimeout(()=>this.$router.push('surveycomp'), 2000)
+    setTimeout(()=>this.$router.push('/surveycomp'), 2000)
   }
 }
 </script>
